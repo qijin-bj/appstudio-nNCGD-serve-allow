@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-whrg
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-tcsa-tenant/appstudio/dc-metro-map-whrg@sha256:eafbbe1793760038f10717ee46dda2fab17274835c3f0e77ab153c2e1876cb6d
+        name: my-nodejs
+        resources: {}
+status: {}
